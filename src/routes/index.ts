@@ -1,6 +1,6 @@
 import { Router } from "express"
 
-import { todoRoutes } from './todo.route'
+import { todoRoutes } from './todo.routes'
 
 const mainRoutes = Router()
 
