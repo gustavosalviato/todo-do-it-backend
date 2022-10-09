@@ -11,9 +11,9 @@ datasource db {
 }
 
 model Todo {
-  id          String  @id @default(uuid())
-  title       String
-  isCompleted Boolean
+  id          String   @id @default(uuid())
+  title       String?
+  isCompleted Boolean?
 
   @@map("todos")
 }
