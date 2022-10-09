@@ -1,9 +1,18 @@
 import express from "express";
+import cors from 'cors'
 import { mainRoutes } from './routes/index'
 
 const app = express()
 
+const corsOptions = {
+	origin: '*',
+	optionsSuccessStatus: 200
+};
+
+
+app.use(cors(corsOptions))
 app.use(express.json())
+
 
 app.use(mainRoutes)
 
