@@ -22,6 +22,18 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
+
+### 🤖 Pré Requisitos para rodar o projeto
+* Previamente o MySQL instalado na sua máquina ou um container docker. Fica de sua preferência!
+* Clone o repositório e crie um arquivo .env, tome como exemplo ".env.example", com as informações do banco de dados.
+* Abra o terminal e rode o comando abaixo
+
+```sh
+npx prisma migrate dev --name
+
+```
+
+
 ### 🎲 Rodando o Back End da aplicação
 
 ```bash
@@ -37,7 +49,7 @@ $ npm install | yarn install
 # Execute a aplicação
 $ npm run dev
 
-# A aplicação  inciará na porta:3333 - acesse <http://localhost:5173>
+# A aplicação inciará na porta:3333 - acesse <http://localhost:3333/todos>
 ```
 
 
@@ -60,7 +72,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 
 <a href="https://github.com/gustavosalviato">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/75762976?v=4" width="100px;" alt=""/>
+ <img style="border-radius: 8px;" src="https://avatars.githubusercontent.com/u/75762976?v=4" width="100px;" alt=""/>
  <br />
  <span><b>Gustavo Henrique</b></span></a> <a href="" title="User">🚀</a>
 
